@@ -1,113 +1,115 @@
-// Global Styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General Page Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for the whole content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  margin-bottom: 20px; /* Reduced margin to make space for the dropdown */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-carousel {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.p-carousel .p-carousel-item img {
+  width: 100%; /* Full width */
+  height: 320px; /* Fixed height to keep it consistent */
+  object-fit: cover; /* Ensures image aspect ratio is preserved */
+  border-radius: 8px;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.p-dropdown {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: #2980b9;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+}
+
+.p-dropdown-panel {
+  border-radius: 4px;
+}
+
+/* Selected Option Display */
+.selected-option {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  
-  // Header Styles
-  .header {
-    background-color: #1d3557; // Dark Blue
-    color: #fff;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .header .menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .header .menu .ant-menu-item {
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .header .menu .ant-menu-item:hover {
-    color: #e63946; // Red color for hover effect
-  }
-  
-  .header .menu .ant-menu-item:active {
-    background-color: transparent; // Remove background on active
-  }
-  
-  // Button Styles (for Menu Icon)
-  .header .ant-btn {
-    color: #fff;
-    border: none;
-    font-size: 18px;
-  }
-  
-  .header .ant-btn:hover {
-    color: #e63946; // Red color on hover for Menu button
-  }
-  
-  // Content Styles
-  .carousel-container {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .carousel-container .ant-carousel .slick-slide {
-    text-align: center;
-  }
-  
-  .carousel-container img {
+
+  .p-carousel {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+    margin-bottom: 20px;
   }
-  
-  // Dropdown Styles
-  .dropdown-container {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .dropdown-container .ant-btn {
-    background-color: #e63946; // Red background for the dropdown button
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown-container .ant-btn:hover {
-    background-color: #1d3557; // Dark blue on hover
-  }
-  
-  // Footer Styles
-  .footer {
-    background-color: #1d3557; // Dark Blue for footer
-    color: rgb(255, 255, 255);
-    text-align: left;
-    padding: 32px;
-    position: relative;
-    bottom: 0;
+
+  .p-dropdown {
     width: 100%;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .footer p {
-    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
   }
-  
+
+  .container {
+    padding: 10px;
+  }
+
+  .p-carousel .p-carousel-item img {
+    height: 150px; /* Smaller height for mobile */
+  }
+}
