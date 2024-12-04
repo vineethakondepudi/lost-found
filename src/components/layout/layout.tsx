@@ -9,7 +9,7 @@ const Layout: React.FC = () => {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const sideNavItems = [
-        { label: 'Dashboard', icon: 'pi pi-chart-line', to: '' },
+        { label: 'Home', icon: 'pi pi-home', to: '' },
         { label: 'Search and Claim', icon: 'pi pi-search', to: '/Search' },
         { label: 'View/Unclaim item', icon: 'pi pi-check-square', to: '/unclaim' }
     ];

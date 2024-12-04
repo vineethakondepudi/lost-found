@@ -3,7 +3,6 @@
     flex-direction: column;
     height: 100vh;
     background-color: #ffffff;
-    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 
@@ -12,8 +11,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #f8f9fa;
-        color: #495057;
+        background-color: #482f17;
+        color: white;
         padding: 0 30px;
         // padding: 20px;
             margin-bottom: 10px;
@@ -41,7 +40,13 @@
                 }
             }
         }
+         .p-menuitem-text {
+            color: white;
     }
+    .p-menuitem-icon{
+        color: white;
+    }
+}
 
     /* Sidebar */
     .layout-body {
@@ -51,7 +56,7 @@
 
         .layout-sidebar {
             width: 260px;
-            background-color: #ffffff;
+            background-color: #482f17;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: width 0.3s ease;
@@ -100,9 +105,8 @@
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: #333;
+        color: white;
         padding: 10px;
-        border-radius: 5px;
         transition: background-color 0.3s;
 
         &:hover {
@@ -122,8 +126,8 @@
     .layout-footer {
         text-align: center;
         padding: 15px;
-        background-color: #f8f9fa; /* Ensuring footer and header have the same color */
-        color: #495057;
+        background-color: #482f17; /* Ensuring footer and header have the same color */
+        color: white;
         font-size: 14px;
         position: relative;
         bottom: 0;
@@ -136,7 +140,7 @@
     .topnav-left .p-button {
         background: none;
         border: none;
-        color: #495057;
+        color: white;
         font-size: 1.5rem;
         padding: 10px;
         cursor: pointer;
